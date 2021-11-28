@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="act1" ng-init="person = {name: 'joji'}; planguage = [{language: 'Java', proficiency: 'beginner'}
+, {language: '', proficiency: 'Good'} , {language: 'Html', proficiency: 'Intermediate'}]">
+
+
+<body style="background-color:#0faaaa">
+<div ng-controller="ctrl1">
+<h1>Programming Activity #1</h1>
+<h2>IT Electives 4</h2>
+<di>
+    <p>First Name: <input type="text" ng-model="fname"></p>
+    <p>Last Name: <input type="text" ng-model="lname"></p>
+    <p>Enter you Address: <input type="text" ng-model="address"></p>
+    <p>Enter your School: <input type="text" ng-model="school"></p>
+    <p>Enter your Course: <input type="text" ng-model="course"></p>
+    <div>
+        <h3><p>Full Name: {{fname + " "+ lname}}</p>
+        <p>Your Address: {{address}}</p>
+        <p>School: {{school}}</p>
+        <p>Course: {{course}}</p></h3>
+        <p>{{name}}</p>
+        <ul>
+          <li ng-repeat= "planguage in planguage">
+          {{'Programming language: ' + planguage.language + , 'Proficiency: 'planguage.proficiency}}
+        </li>
+      </ul>
+    </div>
+
+</div>
+</div>
+<div ng-app="">
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="script.js"></script>
+</body>
